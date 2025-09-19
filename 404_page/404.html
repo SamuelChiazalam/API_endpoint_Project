@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - Page Not Found</title>
+    <style>
+      :root {
+        --body-bgc: #f8f9fa;
+        --err-cont-bgc: #ffffff;
+        --err-code-color: #dc3545;
+        --err-message-color: #333;
+        --back-link-color: #007acc;
+        --back-link-hover-bgc: #005999;
+        --err-discription-color: #666;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 50px;
+        background-color: var(--body-bgc);
+      }
+
+      .error-container {
+        max-width: 600px;
+        margin: 0px auto;
+        background-color: var(--err-cont-bgc);
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .error-code {
+        font-size: 72px;
+        font-weight: bold;
+        color: var(--err-code-color);
+        margin-bottom: 20px;
+      }
+
+      .error-message {
+        font-size: 24px;
+        color: var(--err-message-color);
+        margin-bottom: 20px;
+      }
+
+      .error-discription {
+        font-size: 16px;
+        color: var(--err-discription-color);
+        margin-bottom: 30px;
+      }
+
+      .back-link {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: var(--back-link-color);
+        color: var(--err-cont-bgc);
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3;
+      }
+
+      .back-link:hover {
+        background-color: var(--back-link-hover-bgc);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="error-container">
+      <div class="error-code">404</div>
+      <div class="error-message">Page Not Found</div>
+      <div class="error-discription">
+        Sorry, the page you are looking for doesn't exist. It might have been
+        moved, deleted, or you entered the wrong URL.
+      </div>
+      <a
+        href="./index.html"
+        class="back-link"
+        title="'/index.html' is the only existing route"
+        >Go Back Home</a
+      >
+    </div>
+  </body>
+</html>

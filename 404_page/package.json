@@ -1,0 +1,16 @@
+{
+  "name": "assignment_1_404_page",
+  "version": "1.0.0",
+  "description": "Without using a framework, build a web server to render html files:",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.2"
+  }
+}
